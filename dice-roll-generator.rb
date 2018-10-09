@@ -6,7 +6,12 @@ def dice_roll
     die1, die2 = rand(1..6), rand(1..6)
     puts "The first die lands on #{die1}"
     puts "The second die lands on #{die2}"
+    if die1 == die2
+      puts "You've rolled doubles!"
+    end
     puts "That's a total score of #{die1 + die2}"
+
+
   else
     "Goodbye!"
   end
