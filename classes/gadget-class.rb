@@ -1,4 +1,30 @@
 class Gadget
+
+  attr_accessor :username
+  attr_writer :password
+  attr_reader :production_number
+
+  # #getter - read only
+  # def username #public instance method
+  #   @username #private instance method
+  # end
+  #
+  # #setter - write only
+  # def username=(username)
+  #   @username = username
+  # end
+  #
+  # #getter - read only
+  # def production_number
+  #   @production_number
+  # end
+  #
+  # #setter - write only
+  # def password=(password)
+  #   @password = password
+  # end
+
+
   def initialize #private method
     @username = "User #{rand(1..100)}" #read and write
     @password = "topsecret" #write only
@@ -11,26 +37,6 @@ class Gadget
 
   def to_s  # a public method that can be called directly on the object
     "Overriding the to_s method inherited from the object class"
-  end
-
-  #getter - read only
-  def username #public instance method
-    @username #private instance method
-  end
-
-  #setter - write only
-  def username=(username)
-    @username = username
-  end
-
-  #getter - read only
-  def production_number
-    @production_number
-  end
-
-  #setter - write only
-  def password=(password)
-    @password = password
   end
 end
 
