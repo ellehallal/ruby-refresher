@@ -1,9 +1,7 @@
 module LengthConversions
-
-
   WEBSITE = "http://website.com" #constant
 
-  def self.miles_to_feet(miles)
+  def self.miles_to_feet(miles) #method
     miles * 5280
   end
 
